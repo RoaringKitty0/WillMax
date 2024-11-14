@@ -1,22 +1,19 @@
-window.addEventListener("resize", AutoScale); //Масштабируем страницу при растягивании окна
+function Swap() {
 
-AutoScale(); //Масштабируем страницу после загрузки
-
-function AutoScale()
-{
-    let width = window.screen.Width; //Ширина окна
-    //Если вы хотите проверять по размеру экрана, то вам нужно свойство window.screen.width
-
-    if(width > 1280)
-    {
-   	 ChangeScale("big");
+    var width = window.innerWidth;
+    
+    if (width <= 599 && swapped === false) {
+    
+    swapDesign("Mobile");
+    
+    swapped = true;
+    
+    } else if (width > 599 && swapped === true) {
+    
+    swapDesign("Desktop");
+    
+    swapped = false;
+    
     }
-    else if(width <= 1280 && width > 720)
-    {
-   	 ChangeScale("normal");
+    
     }
-    else if(width < 720)
-    {
-   	 ChangeScale("small");
-    }
-}
