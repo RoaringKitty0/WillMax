@@ -34,7 +34,7 @@ img {
 }
 
 .wrapper {
-    background: url(Mountain.svg) no-repeat center center fixed;
+    background: url("Mountain.svg") no-repeat center center fixed;
     background-size: cover;
 
 }
