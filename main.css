@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+/* Общие стили */
 * {
     margin: 0;
     padding: 0;
@@ -10,10 +9,10 @@ html {
 }
 
 body {
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-first {
+.first {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: #fff;
@@ -34,9 +33,8 @@ img {
 }
 
 .wrapper {
-    background: url('Mountain.svg') no-repeat center center fixed;
+    background: url('/img/Mountain.svg') no-repeat center center fixed;
     background-size: cover;
-
 }
 
 .container {
@@ -76,11 +74,10 @@ header nav ul li a {
     color: #fff;
     font-weight: 200;
     color: #898e93;
-
 }
 
 header nav ul li.active::after {
-    content: ' ';
+    content: '';
     display: block;
     width: 20px;
     height: 3px;
@@ -152,7 +149,7 @@ header nav ul li.btn a:hover {
 }
 
 .second {
-    font-family: 'Poppins', sans-serif ;
+    font-family: 'Poppins', sans-serif;
     color: #000;
     background: #e8eaed;
     background-size: cover;
@@ -169,23 +166,21 @@ header nav ul li.btn a:hover {
     font-weight: 100;
     color: #181818;
     padding-top: 100px;
-    padding-top: 100px;
 }
 
 .second--info h5 {
     font-size: 30px;
-    font-weight: 800px;
-    color:#1d333d;
+    font-weight: 800;
+    color: #1d333d;
     width: 700px;
     padding-top: 50px;
-    
 }
 
 .second--info h6 {
     font-size: 20px;
     font-weight: 300;
     color: #181818;
-    padding-top:70px;
+    padding-top: 70px;
     padding-left: 551px;
     padding-bottom: 70px;
 }
@@ -201,19 +196,19 @@ header nav ul li.btn a:hover {
 
 .realisers {
     display: flex;
-    justify-content: space-between; /* Размещаем элементы по ширине контейнера */
+    justify-content: space-between;
 }
 
 .realiser {
-    text-align: center; /* Центрируем текст относительно изображений */
-    margin: 0; /* Отступы слева и справа */
+    text-align: center;
+    margin: 0;
 }
 
 .realiser img {
-    width: auto; /* Ширина изображения (может быть изменена по необходимости) */
-    height: auto; /* Сохраняем пропорции изображения */
-     /* Делаем изображение круглым */
-    margin-bottom: 15px; /* Отступ снизу от изображения до текста */
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
 }
 
 .realiser h1 {
@@ -221,8 +216,8 @@ header nav ul li.btn a:hover {
     font-family: 'Poppins';
     font-size: 25px;
     font-weight: 300;
-    margin-top: 0; /* Убираем верхний отступ у заголовка */
-    margin-bottom: 5px; /* Небольшой отступ перед подзаголовком */
+    margin-top: 0;
+    margin-bottom: 5px;
 }
 
 .realiser h2 {
@@ -231,15 +226,115 @@ header nav ul li.btn a:hover {
     font-size: 14px;
     font-weight: 100;
     margin: 0;
-    padding-bottom: 100px; /* Убираем верхние и нижние отступы */
-} 
+    padding-bottom: 100px;
+}
 
+/* Медиа-запросы */
+
+/* Для экранов меньше 992px */
+@media screen and (max-width: 991px) {
+    header nav {
+        width: 100%;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+    }
+
+    header nav ul li {
+        width: 33.33%; /* Примерное значение для трех пунктов меню */
+    }
+
+    .hero--info {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .hero--info h1,
+    .hero--info h3 {
+        font-size: 60px;
+        width: 100%;
+    }
+
+    .second--info h5 {
+        width: 100%;
+    }
+
+    .realisers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .realiser {
+        margin-bottom: 30px;
+    }
+}
+
+/* Для экранов больше 992px и меньше 1440px */
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+    header nav ul li {
+        width: 24%; /* Примерное значение для четырех пунктов меню */
+    }
+
+    .container,
+    .container2 {
+        width: 1200px;
+    }
+
+    .hero--info {
+        width: 450px;
+    }
+
+    .hero--info h1,
+    .hero--info h3 {
+        font-size: 70px;
+        width: 420px;
+    }
+
+    .second--info h5 {
+        width: 650px;
+    }
+
+    .realisers {
+        gap: 20px;
+    }
+}
+
+/* Для экранов больше 1440px */
+@media screen and (min-width: 1440px) {
+    header nav ul li {
+        width: 19%; /* Примерное значение для пяти пунктов меню */
+    }
+
+    .container,
+    .container2 {
+        width: 1350px;
+    }
+
+    .hero--info {
+        width: 520px;
+    }
+
+    .hero--info h1,
+    .hero--info h3 {
+        font-size: 75px;
+        width: 470px;
+    }
+
+    .second--info h5 {
+        width: 750px;
+    }
+
+    .realisers {
+        gap: 30px;
+    }
+}
 /* секция с speakers */
 
 .container3 {
     width: 1300px;
     margin: 0 auto;
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .speakers {
@@ -291,7 +386,6 @@ h3 {
     z-index: 1;
     margin: 0;
     line-height: 1.1;
-
 }
 
 .block h4 {
@@ -339,7 +433,7 @@ h3 {
 }
 
 .big-text h4 {
-    padding-top: 100px ;
+    padding-top: 100px;
     font-size: 25px;
     font-weight: 200;
     text-align: right;
@@ -372,7 +466,6 @@ h3 {
 .container5 {
     width: 1200px;
     margin: 0 auto;
-
 }
 
 .quote h1 {
@@ -401,3 +494,132 @@ h3 {
     padding: 250px 0;
 }
 
+/* Медиа-запросы */
+
+/* Для экранов меньше 992px */
+@media screen and (max-width: 991px) {
+    .speakers {
+        padding: 30px 0;
+    }
+
+    h3 {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    .games {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .block {
+        width: 48%;
+        height: 350px;
+    }
+
+    .big-text h4 {
+        padding-top: 50px;
+        font-size: 22px;
+    }
+
+    .big-text h2 {
+        font-size: 34px;
+    }
+
+    .banner {
+        padding: 50px 0;
+    }
+
+    .quote h1 {
+        font-size: 150px;
+        padding-top: 80px;
+    }
+
+    .quote h2 {
+        font-size: 36px;
+    }
+
+    .quote h3 {
+        padding: 180px 0;
+    }
+}
+
+/* Для экранов больше 992px и меньше 1440px */
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+    .container3,
+    .container4,
+    .container5 {
+        width: 1100px;
+    }
+
+    .block {
+        width: 320px;
+        height: 380px;
+    }
+
+    .big-text h4 {
+        padding-top: 70px;
+        font-size: 23px;
+    }
+
+    .big-text h2 {
+        font-size: 37px;
+    }
+
+    .banner {
+        padding: 70px 0;
+    }
+
+    .quote h1 {
+        font-size: 170px;
+        padding-top: 100px;
+    }
+
+    .quote h2 {
+        font-size: 44px;
+    }
+
+    .quote h3 {
+        padding: 220px 0;
+    }
+}
+
+/* Для экранов больше 1440px */
+@media screen and (min-width: 1440px) {
+    .container3,
+    .container4,
+    .container5 {
+        width: 1250px;
+    }
+
+    .block {
+        width: 340px;
+        height: 410px;
+    }
+
+    .big-text h4 {
+        padding-top: 90px;
+        font-size: 27px;
+    }
+
+    .big-text h2 {
+        font-size: 42px;
+    }
+
+    .banner {
+        padding: 90px 0;
+    }
+
+    .quote h1 {
+        font-size: 190px;
+        padding-top: 140px;
+    }
+
+    .quote h2 {
+        font-size: 52px;
+    }
+
+    .quote h3 {
+        padding: 270px 0;
+    }
+}
