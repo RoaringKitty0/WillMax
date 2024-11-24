@@ -34,7 +34,7 @@ img {
 }
 
 .wrapper {
-    background: url('Mountain.svg') no-repeat center center fixed;
+    background: url('/img/Mountain.svg') no-repeat center center fixed;
     background-size: cover;
 
 }
@@ -455,19 +455,23 @@ h3 {
     
     header .logo {
         font-size: 24px;
-        margin-top: 20px;
+        margin-top: 10px;
     }
     
     header nav {
         width: 100%;
         float: none;
-        margin-top: 20px;
+        margin-top: 10px;
     }
     
     header nav ul {
         flex-direction: column;
         text-align: right;
         gap: 10px;
+    }
+
+    header nav ul li:not(.active):not(.btn) a:hover {
+        color: #212222;
     }
     
     header nav ul li.btn {
@@ -481,7 +485,8 @@ h3 {
     height: 3px;
     background: #1d333d;
     cursor: pointer;
-    float: right;
+    float: left;
+    margin-left: 495px;
     }
 
     header nav ul li:not(.active):not(.btn) a:hover {
@@ -501,42 +506,191 @@ h3 {
     }    
     .hero--info {
         width: 100%;
-        padding-top: 40px;
+        padding-top: 30px;
     }
     
     .hero--info h1,
     .hero--info h3 {
-        font-size: 37px;
+        font-size: 55px;
+    }
+
+    .hero--info h1 {
+        color: #e8eaed;
+    }
+
+    .hero--info h3 {
+        color: #181818;
+        font-size: 65px;
     }
     
     .hero--info h2 {
         font-size: 23px;
+        color: #000;
     }
 
     .hero--info p {
-        font-sie: 10px;
+        font-size: 14px;
+        width: 75%;
+        padding-bottom: 20px;
+        padding-top: 10px;
     }
 
 
     .second--info h6 {
-        float: right;
+        float: center;
+        margin-left: 150px;
+        font-size: 17px;
     }
     
     .second--info h3 {
         font-size: 32px;
         padding-bottom: 40px;
+        margin-top: 30px;
     }
 
     .second--info h1 {
         font-size: 15px;
+        margin-left: 5px;
     }
 
     .second--info h2 {
         font-size: 10px;
+        margin-left: 10px;
     }
     
     .second--info h5 {
         font-size: 20px;
         padding-top: 30px;
+        font-weight: 800;
+        width: 75%;
     }
+    .second--info .realiser img {
+        width: 75%;
+        height: auto;
+        margin-right: 25px;
+        padding-top: 5px;
+    }
+    .container3 {
+        max-width: 576px;
+        margin: 0 auto;
+        font-family: 'Poppins' sans-serif;
+        width: 90%;
+    }
+    .speakers .block .img {
+        height: 70%;
+        width: 100%;
+        margin: 0 auto 20px;
+    }
+
+    .container3 h3 {
+        width: 90%;
+    }
+
+    .block::before {
+        content: "Спикер";
+        font-family: 'Poppins';
+        font-weight: 800;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 17px;
+        color: #212222;
+        background-color: transparent;
+        padding: 5px 10px;
+        z-index: 1;
+    }
+
+    .block h1 {
+        font-family: 'Poppins';
+        font-weight: 500;
+        position: absolute;
+        bottom: 70px;
+        left: 35%;
+        transform: translateX(-50%);
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: transparent;
+        padding: 5px 10px;
+        z-index: 1;
+        margin: 0;
+        line-height: 1.1;
+    
+    }
+
+    .block h4 {
+        font-family: 'Poppins';
+        font-weight: 100;
+        position: absolute;
+        bottom: 10px;
+        left: 35%;
+        transform: translateX(-50%);
+        font-size: 10px;
+        width: 70%;
+        color: #ffffff;
+        background-color: transparent;
+        padding: 5px 10px;
+        z-index: 1;
+        margin-left: 10px;
+        line-height: 1.1;
+        height: 50px;
+    }
+
+    .container4 {
+        max-width: 576px;
+        margin: 0 auto;
+        font-family: 'Poppins' sans-serif;
+        width: 90%;
+    }
+
+    .big-text h4 {
+        padding-top: 50px ;
+        font-size: 20px;
+        font-weight: 200;
+        text-align: right;
+        font-family: 'Poppins';
+        color: #181818;
+    }
+
+    .big-text h2 {
+        font-size: 25px;
+        font-weight: 800;
+        text-align: right;
+        font-family: 'Poppins';
+        color: #1d333d;
+    }
+
+    .container5 {
+        max-width: 576px;
+        margin: 0 auto;
+        font-family: 'Poppins' sans-serif;
+        width: 90%;
+    }
+
+    .quote h1 {
+        padding-top: 50px;
+        font-family: 'Poppins';
+        font-size: 100px;
+        font-weight: 600;
+        color: #e8eaed;
+        text-align: center;
+    }
+    
+    .quote h2 {
+        font-family: 'Poppins';
+        font-size: 25px;
+        font-weight: 600;
+        color: #e8eaed;
+        text-align: center;
+    }
+    
+    .quote h3 {
+        font-family: 'Poppins';
+        font-size: 15px;
+        font-weight: 200;
+        color: #e8eaed;
+        text-align: left;
+        padding: 100px 0;
+    }
+    
 }
