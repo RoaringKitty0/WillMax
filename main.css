@@ -455,6 +455,7 @@ h3 {
     
     header .logo {
         font-size: 24px;
+        margin-top: 20px;
     }
     
     header nav {
@@ -480,6 +481,7 @@ h3 {
     height: 3px;
     background: #1d333d;
     cursor: pointer;
+    float: right;
     }
 
     header nav ul li:not(.active):not(.btn) a:hover {
