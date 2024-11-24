@@ -466,13 +466,37 @@ h3 {
     header nav ul {
         flex-direction: column;
         text-align: right;
-        gap: 15px;
+        gap: 10px;
     }
     
     header nav ul li.btn {
         margin-top: 10px;
     }
-    
+
+    header nav ul li.active::after {
+    content: ' ';
+    display: block;
+    width: 20px;
+    height: 3px;
+    background: #1d333d;
+    cursor: pointer;
+    }
+
+    header nav ul li:not(.active):not(.btn) a:hover {
+        border-bottom: 3px solid #1d333d;
+        transition: all 400ms ease;
+    }
+
+    header nav ul li.btn a {
+        background: #1d333d;
+        padding: 9px 17px;
+        border-radius: 45px;
+        transition: all 500ms ease;
+    }
+
+    header nav ul li.btn a:hover {
+    background: #05090b;
+    }    
     .hero--info {
         width: 100%;
         padding-top: 40px;
