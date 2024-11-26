@@ -675,7 +675,7 @@ h3 {
 /* EEEEOEOEOEOEOEOEOEOEOOEOEOEOOOEOEOEOOEOOAEOEOAOEOEAOEOAEOEAOOEOAOEOEOEOOEAOEOOEAOEOAEOAOOAEOEOAOEOAOEAOOEAOEAOOEAEOAEOAOOO */
 
 
-@little screen and (max-width: 400px) {
+@little screen and (max-width: 450px) {
 
     .wrapper {
         background: url('Mountains2.svg') no-repeat center center fixed;
@@ -719,6 +719,8 @@ h3 {
     nav ul li a{
         text-decoration: none;
         color: #e8eaed;
+        font-size: 15px;
+        font-weight: 500;
     }
 
 
@@ -771,7 +773,7 @@ h3 {
 
     .hero--info p {
         font-size: 14px;
-        width: 80%;
+        width: 85%;
         padding-bottom: 20px;
         padding-top: 10px;
     }
