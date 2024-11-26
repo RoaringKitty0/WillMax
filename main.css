@@ -34,7 +34,7 @@ img {
 }
 
 .wrapper {
-    background: url('/img/Mountain.svg') no-repeat center center fixed;
+    background: url('Mountain.svg') no-repeat center center fixed;
     background-size: cover;
 
 }
@@ -461,7 +461,7 @@ h3 {
 @media screen and (max-width: 576px) {
 
     .wrapper {
-        background: url('/img/Mountains2.png') no-repeat center center fixed;
+        background: url('Mountains2.png') no-repeat center center fixed;
         background-size: cover;
     
     }
