@@ -673,8 +673,8 @@ h3 {
         font-weight: bold;
         color: #ffffff;
         background-color: transparent;
-        padding: 5px 20px;
-        float: left;
+        padding: 5px 0px;
+        text-algin: center;
         z-index: 1;
         margin: 0;
         line-height: 1.1;
