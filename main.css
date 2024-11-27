@@ -668,13 +668,12 @@ h3 {
         font-weight: 500;
         position: absolute;
         bottom: 16%;
-        float: left;
         transform: translateX(-50%);
         font-size: 18px;
         font-weight: bold;
         color: #ffffff;
         background-color: transparent;
-        padding: 5px 10px;
+        padding: 5px 50%;
         z-index: 1;
         margin: 0;
         line-height: 1.1;
