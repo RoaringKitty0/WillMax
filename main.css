@@ -158,6 +158,32 @@ nav ul li.btn a:hover {
     padding-bottom: 130px;
 }
 
+.message {
+    background: #181818;
+    color: #d5d9de;
+    
+}
+
+.container8 {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.message h1 {
+    font-family: 'Poppins';
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.message h2 {
+    font-family: 'Poppins';
+    font-weight: 100;
+    font-size: 20px;
+    width: 75%;
+}
+
 .second {
     font-family: 'Poppins', sans-serif ;
     color: #000;
