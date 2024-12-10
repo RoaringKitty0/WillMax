@@ -446,6 +446,41 @@ h3 {
     padding: 250px 0;
 }
 
+.container9 {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+
+.place h5{
+    font-family: 'Poppins';
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.place h6 {
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 70px;
+}
+
+
+.place h3 {
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #181818;
+}
+
+.place img {
+    width: auto;
+    height: auto;
+    float: right;
+}
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
 
